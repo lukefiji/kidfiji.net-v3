@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 
-import Container from "../components/Container";
+import { Container } from "../components/Grid";
 
 import styleVars from "../styleVars";
 

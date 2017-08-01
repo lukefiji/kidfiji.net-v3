@@ -2,18 +2,29 @@ import React from "react";
 import Link from "gatsby-link";
 
 import { Flex, Box } from "grid-styled";
-
-import Container from "../components/Container";
+import { Container, Row, Column } from "../components/Grid";
 import Header from "../components/Header";
+import SectionHeader from "../components/SectionHeader";
+import PortfolioGridItem from "../components/PortfolioGridItem";
 
 const Portfolio = () =>
   <div>
     <Header />
-    <Container width={1}>
-      <h1>Portfolio</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <Link to="/page-2/">Go to page 2</Link>
+    {/* <Container>
+      <SectionHeader>Test</SectionHeader>
+    </Container> */}
+    <Container fullwidth>
+      <Row>
+        <Column>
+          <PortfolioGridItem />
+        </Column>
+        <Column>
+          <PortfolioGridItem />
+        </Column>
+        <Column>
+          <PortfolioGridItem />
+        </Column>
+      </Row>
     </Container>
   </div>;
 

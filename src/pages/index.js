@@ -3,27 +3,29 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import { Flex, Box } from "grid-styled";
 
-import Container from "../components/Container";
+import { Container, Row, Column } from "../components/Grid";
 import Header from "../components/Header";
+import SectionHeader from "../components/SectionHeader";
+import PortfolioGridItem from "../components/PortfolioGridItem";
 
 import styleVars from "../styleVars";
 
 const HeroBox = styled(Flex)`
-  background-color: #1b1b1b;
+  background-color: ${styleVars.black};
 `;
 
 const HeroText = styled.h1`
   font-family: ${styleVars.headerFont};
   font-weight: 400;
   font-size: 4em;
-  color: #ffffff;
+  color: ${styleVars.white};
   margin: 0;
   line-height: 1.125;
 `;
 
 const TopLine = styled.hr`
   height: 4px;
-  background: #1b1b1b;
+  background: ${styleVars.fontColor};
   margin-bottom: 12px;
 
   @media (max-width: 40em) {
@@ -31,28 +33,33 @@ const TopLine = styled.hr`
   }
 `;
 
-const SectionHeader = styled.h2`
+const SectionTitle = styled.h2`
   font-family: ${styleVars.headerFont};
   font-weight: 500;
 `;
 
-const SectionText = styled.p`font-family: sans-serif;`;
+const SectionText = styled.p`
+  font-family: ${styleVars.bodyFont};
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.75;
+`;
 
 const IndexPage = () =>
   <div>
     <Header />
-    <HeroBox justify="center" align="center" px={2} py={4} mb={[2, 2]} column>
+    <HeroBox justify="center" align="center" px={2} py={2} mb={[4]} column>
       <Container>
         <HeroText>Hey there!</HeroText>
         <HeroText>My name's Luke Fiji,</HeroText>
         <HeroText>and I create experiences.</HeroText>
       </Container>
     </HeroBox>
-    <Container px={[2, 3]} py={4}>
+    <Container>
       <Flex w={1} pb={4} wrap>
         <Box w={[1, 1 / 4]}>
           <TopLine />
-          <SectionHeader>About</SectionHeader>
+          <SectionTitle>About</SectionTitle>
         </Box>
         <Box w={[1, 3 / 4]} pl={[0, 3, 4]} pt={2}>
           <SectionText>
@@ -69,7 +76,7 @@ const IndexPage = () =>
       <Flex w={1} pb={4} wrap>
         <Box w={[1, 1 / 4]}>
           <TopLine />
-          <SectionHeader>Stack</SectionHeader>
+          <SectionTitle>Stack</SectionTitle>
         </Box>
         <Box w={[1, 3 / 4]} pl={[0, 3, 4]} pt={2}>
           <SectionText>
@@ -83,6 +90,20 @@ const IndexPage = () =>
           </SectionText>
         </Box>
       </Flex>
+    </Container>
+    <Container fullwidth wrap>
+      <Row>
+        <Column w={1 / 2}>
+          <TopLine />
+          <SectionTitle>Work</SectionTitle>
+        </Column>
+        <Column w={[1, 1 / 3]}>
+          <PortfolioGridItem />
+        </Column>
+        <Column>
+          <PortfolioGridItem />
+        </Column>
+      </Row>
     </Container>
   </div>;
 
