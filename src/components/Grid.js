@@ -14,7 +14,6 @@ const Container = props =>
 
 const Row = props => <Flex {...props} />;
 
-const Column = props =>
-  <Box {...props} px={props.fullwidth ? 0 : [2, 3]} flex="1 1 auto" />;
+const Column = props => <Box {...props} px={props.fullwidth ? 0 : [2, 3]} />;
 
 export default { Container, Row, Column };

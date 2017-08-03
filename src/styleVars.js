@@ -1,6 +1,6 @@
 const styleVars = {
-  headerFont: "'Montserrat', Helvetica, Arial, sans-serif",
-  bodyFont: "'Esteban', Georgia, serif",
+  headerFont: "Avenir, Helvetica, Arial, sans-serif",
+  bodyFont: "Avenir, Helvetica, Arial, sans-serif",
   linkFont: "",
   black: "#1b1b1b",
   white: "#ffffff",

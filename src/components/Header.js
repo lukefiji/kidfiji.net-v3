@@ -28,10 +28,12 @@ const Logo = styled.img`
 `;
 
 const NavLink = styled(Link)`
+  font-family: ${styleVars.headerFont};
+  // letter-spacing: 2px;
+  font-size: 1rem;
   text-decoration: none;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   color: #1b1b1b;
-  font-family: sans-serif;
 
   &:not(:last-child) {
     margin-right: 1em;
