@@ -47,13 +47,13 @@ const IndexPage = () =>
         </Column>
         <Column w={[1, 3 / 4]} px={[0, 3, 4]} pt={2}>
           <SectionText>
-            I am a web developer with roots in graphic design who wanted to
-            expand on my work from things people can see into things that people
-            can use and enjoy. I primarily focus on the front-end user
-            experience but I also have some understanding with backend
-            development in Node & Express. I hold a firm belief that finding the
-            optimal balance between great design and usability is an essential
-            part of achieving success in the industry.
+            I am a web developer wanted to expand on my roots in graphic design
+            - I wanted to transform things people can see into things that
+            people can use and enjoy. I usually find myself doing work on the
+            front-end side but sometimes I’ll take a dive into the back-end with
+            Node and Express. I hold a firm belief that finding the optimal
+            balance between great design and usability is an essential part of
+            achieving success in the industry.
           </SectionText>
         </Column>
       </Row>
@@ -64,12 +64,12 @@ const IndexPage = () =>
         </Column>
         <Column w={[1, 3 / 4]} px={[0, 3, 4]} pt={2}>
           <SectionText>
-            I primarily work with JavaScript because I enjoy building things
-            with React and Node. In fact, this site was created in React with
-            the help of Gatsby.js. I also do some freelance work on the side
-            with WordPress. I love tinkering with new tools, frameworks, and
-            technologies, as I have an unsatiable thirst for learning. You can
-            check out my experiments on my {" "}
+            I love working with JavaScript because I started off learning how to
+            build things for the web and haven’t looked back. On the way, I’ve
+            found myself to enjoy creating things with React and Node; and in
+            fact, this site was created with React. I just love tinkering with
+            new tools, frameworks, and technologies, as I have an unsatiable
+            thirst for learning. You can check out my work and experiments on my{" "}
             <Link to="/portfolio/">portfolio page</Link>.
           </SectionText>
         </Column>
