@@ -12,6 +12,19 @@ export const HeroText = styled.h1`
   color: ${styleVars.black};
   margin: 0;
   line-height: 1.125;
+
+  @media (max-width: 64em) {
+    font-size: 3.5em;
+  }
+
+  @media (max-width: 52em) {
+    display: inline;
+    font-size: 3em;
+  }
+
+  @media (max-width: 40em) {
+    font-size: 2.5em;
+  }
 `;
 
 const Hero = props => {

@@ -10,7 +10,7 @@ const StyledContainer = styled(Box)`
 `;
 
 const Container = props =>
-  <StyledContainer {...props} px={props.fullwidth ? 0 : [2, 3]} py={3} />;
+  <StyledContainer {...props} px={props.fullwidth ? 0 : [2, 3]} py={[2, 3]} />;
 
 const Row = props => <Flex {...props} />;
 

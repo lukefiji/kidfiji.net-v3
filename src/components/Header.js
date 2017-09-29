@@ -11,7 +11,7 @@ const TopHeader = styled.header`
   padding: 1.25em 0;
   width: 100%;
 
-  @media (min-width: 480px) {
+  @media (min-width: 40em) {
     padding: 1.5em 0;
   }
 `;
@@ -21,7 +21,7 @@ const Logo = styled.img`
   height: 4em;
   width: 4em;
 
-  @media (min-width: 500px) {
+  @media (min-width: 40em) {
     height: 5em;
     width: 5em;
   }

@@ -23,12 +23,27 @@ const TopLine = styled.hr`
 
 const SectionTitle = styled.h2`
   font-size: 3em;
+  color: ${styleVars.fontColor};
   font-family: ${styleVars.headerFont};
   font-weight: 600;
+  margin-bottom: .5em;
+
+  @media (max-width: 64em) {
+    font-size: 2.5em;
+  }
+
+  @media (max-width: 52em) {
+    font-size: 2.25em;
+  }
+
+  @media (max-width: 40em) {
+    font-size: 2em;
+  }
 `;
 
 const SectionText = styled.p`
   font-family: ${styleVars.bodyFont};
+  color: ${styleVars.fontColor};
   font-weight: 300;
   line-height: 1.75;
 `;
@@ -37,14 +52,13 @@ const IndexPage = () =>
   <div>
     <Header />
     <Hero>
-      <HeroText>Hey there!</HeroText>
-      <HeroText>My name's Luke Fiji,</HeroText>
+      <HeroText>Hey there! </HeroText>
+      <HeroText>My name's Luke Fiji, </HeroText>
       <HeroText>and I create experiences.</HeroText>
     </Hero>
     <Container fullwidth>
       <Row w={1} pb={4} wrap>
-        <Column w={[1, 2 / 3]}>
-          <TopLine />
+        <Column w={[1, 4 / 5, 2 / 3]}>
           <SectionTitle>about</SectionTitle>
           <SectionText>
             I am a web developer wanted to expand on my roots in graphic design
@@ -56,11 +70,9 @@ const IndexPage = () =>
             achieving success in the industry.
           </SectionText>
         </Column>
-        <Column w={[1, 1 / 2]} px={[0, 3, 4]} pt={2} />
       </Row>
       <Row w={1} pb={4} wrap>
-        <Column w={[1, 2 / 3]}>
-          <TopLine />
+        <Column w={[1, 4 / 5, 2 / 3]}>
           <SectionTitle>stack</SectionTitle>
           <SectionText>
             I love working with JavaScript because I started off learning how to
@@ -72,23 +84,20 @@ const IndexPage = () =>
             <Link to="/portfolio/">portfolio page</Link>.
           </SectionText>
         </Column>
-
-        <Column w={[1, 1 / 2]} px={[0, 3, 4]} pt={2} />
       </Row>
       <Row>
         <Column w={[1]}>
-          <TopLine />
           <SectionTitle>work</SectionTitle>
         </Column>
       </Row>
       <Row wrap>
-        <Column w={[1, 1 / 2, 1 / 3]} pt={2}>
+        <Column w={[1, 1 / 2, 1 / 3]} pt={1} pb={3}>
           <PortfolioGridItem />
         </Column>
-        <Column w={[1, 1 / 2, 1 / 3]} pt={2}>
+        <Column w={[1, 1 / 2, 1 / 3]} pt={1} pb={3}>
           <PortfolioGridItem />
         </Column>
-        <Column w={[1, 1 / 2, 1 / 3]} pt={2}>
+        <Column w={[1, 1 / 2, 1 / 3]} pt={1} pb={3}>
           <PortfolioGridItem />
         </Column>
       </Row>
